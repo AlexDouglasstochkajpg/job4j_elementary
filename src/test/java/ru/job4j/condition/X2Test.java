@@ -9,17 +9,12 @@ class X2Test {
 
     @Test
     void whenA10B0C0X2Then40() {
-        /* Входные параметры. Их будет 4 для данного случая. */
         int a = 10;
         int b = 0;
         int c = 0;
         int x = 2;
-        /* Ожидаемое значение. Это всегда одна переменная. */
         int expected = 40;
-        /* Вызов метода, который хотим проверить */
-        /* Результат вычисления. Это всегда одна переменная. */
         int rsl = X2.calc(a, b, c, x);
-        /* Сравнение полученного значения с ожидаемым. */
         Assert.assertEquals(expected, rsl);
     }
 
@@ -30,7 +25,7 @@ class X2Test {
         int c = 1;
         int x = 1;
         int expected = 3;
-        int rsl = X2.calc2(a, b, c, x);
+        int rsl = X2.calc(a, b, c, x);
         Assert.assertEquals(expected, rsl);
     }
 
@@ -41,7 +36,7 @@ class X2Test {
         int c = 1;
         int x = 1;
         int expected = 2;
-        int rsl = X2.calc3(a, b, c, x);
+        int rsl = X2.calc(a, b, c, x);
         Assert.assertEquals(expected, rsl);
     }
 
@@ -52,7 +47,7 @@ class X2Test {
         int c = 0;
         int x = 1;
         int expected = 2;
-        int rsl = X2.calc4(a, b, c, x);
+        int rsl = X2.calc(a, b, c, x);
         Assert.assertEquals(expected, rsl);
     }
 
@@ -63,7 +58,7 @@ class X2Test {
         int c = 1;
         int x = 0;
         int expected = 1;
-        int rsl = X2.calc5(a, b, c, x);
+        int rsl = X2.calc(a, b, c, x);
         Assert.assertEquals(expected, rsl);
     }
 }
