@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.*;
 class EqLastTest {
 
     @Test
-    void whenEq() {
+    public void whenEq() {
         int[] left = {1, 2, 3};
         int[] right = {5, 4, 3};
         boolean result = EqLast.check(left, right);
