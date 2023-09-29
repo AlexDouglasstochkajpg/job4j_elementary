@@ -23,6 +23,14 @@ public class MatrixCheck {
         return result;
     }
 
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int i = 0; i < board.length; i++) {
+            rsl[i] = board[i][i];
+        }
+        return rsl;
+    }
+
     public static void main(String[] args) {
         char[][] numbers = new char[][] {
                 {'X', 'X', 'X'},
@@ -35,5 +43,12 @@ public class MatrixCheck {
         int column = 2;
         rsl = monoVertical(numbers, column);
         System.out.println(rsl);
+        char[][] nums = new char[][] {
+                {'X', ' ', ' '},
+                {' ', 'Y', ' '},
+                {' ', ' ', 'Z'}
+        };
+        System.out.println(extractDiagonal(nums));
+
     }
 }
